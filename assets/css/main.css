@@ -11,3 +11,19 @@ object {
 body {
   padding-top: 3.5rem;
 }
+
+.resume_nav {
+  padding-top: 3.5rem;
+}
+
+.email {
+  border-radius: 15px;
+}
+
+.chatbot_gif {
+  border-radius: 25px;
+}
+
+.project_container {
+  padding-bottom: 1rem;
+}

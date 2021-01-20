@@ -13,36 +13,21 @@
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/index.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ca80335392.js" crossorigin="anonymous"></script>
-    
   </head>
 
-  <body>
+  <body class="text-center">
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
-      <a class="navbar-brand" href="#">Pedro Vicente-Valdez</a>
+      <a class="navbar-brand" href="#">Pedro Jr. Vicente-Valdez</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              NucML
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">GitHub</a>
-              <a class="dropdown-item" href="nuclear_reaction_xs.html">TensorFlow Dataset</a>
-            </div>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects </i></a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="projects.html">Projects </i></a>
@@ -53,6 +38,15 @@
           <li class="nav-item">
             <a class="nav-link" href="https://www.linkedin.com/in/pedrojrvv/">LinkedIn <i class="fab fa-linkedin"></i></a>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              NucML
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">GitHub</a>
+              <a class="dropdown-item" href="nuclear_reaction_xs.html">TensorFlow Dataset</a>
+            </div>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="resume.html">Resume</i></a>
           </li>
@@ -60,122 +54,24 @@
       </div>
     </nav>
 
-    <main role="main">
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column align-items-center">
 
-      <div class="jumbotron text-center">
-        <h1 class="display-3">Projects</h1>
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">Pedro Jr. Vicente Valdez</h1>
         <p class="lead">
-
+          Passionate about everyday learning and designing data-driven workflows and pipelines to solve machine learning and data science challenges.<br><br>
+          PhD Candidate in Nuclear Engineering at UC Berkeley<br>AI/ML Moderator at Apple<br>e-mail: pedro.vicentevz@berkeley.edu
         </p>
-      </div>
-
-      <div class="container">
-        <h1>NucML</h1>
-        <p>NucML is a python toolbox for accelerated ML-based nuclear data evaluations.</p>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <canvas class="my-4" id="total_chart" width="50%" height="30%"></canvas>
-          </div>
-          <div class="col">
-            <h1>San Francisco Crime and Incident Reporter <a href="https://pedrojrv.github.io/sfpd_incident_reporter/"><i class="fab fa-github"></i></a></h1>
-            <p>Python <i class="fab fa-python"></i> JavaScript <i class="fab fa-js"></i> Front-end <i class="fab fa-html5"></i></p> 
-            <p>
-              First created as part of the IBM Data Science Specialization, this website was further developed to provide information on incident 
-              and crime rate in various districts of the San Francisco area. Based on Python and JavaScript, the website offers various visualizations
-              and even AI-powered crime rate predictions. It refreshes daily by querying and processing data from the official SFPD database. 
-              Through a visualizations, of visualizations it provides a broad overview of the crime rate in San Francisco and in its various districts. 
-              <a href="https://pedrojrv.github.io/sfpd_incident_reporter/">Learn more.</a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1>SCALE PyTools <a href="https://github.com/pedrojrv/SCALE_PyTools"><i class="fab fa-github"></i></a></h1>
-            <p>Python <i class="fab fa-python"></i> &#183 MATLAB</p>
-            <p>
-              Aimed at tackling tedius data extraction processes, SCALE PyTools is a python-based project designed to allow for faster experimental
-              iterations of reactivity and fission product removal simulations of advance nuclear reactor using SCALE, a comprehensive modeling and 
-              simulation suite for nuclear safety analysis. More specifically, the utilities were designed to generate and run fission product removal
-              simulations of the off-gas system in molten salt reactors. This utility toolbox was used to study the SCALE's new TRITON module. 
-              <a href="https://github.com/pedrojrv/SCALE_PyTools">Learn more.</a>
-            </p>
-            <p><a href="https://info.ornl.gov/sites/publications/Files/Pub135162.pdf"><i class="fas fa-download"></i> Published Technical Report</p></a>
-            <p><a href="https://drive.google.com/file/d/1alniDp8h4_7ej0qH7MWP0n5IaL_9p-rD/view?usp=sharing"><i class="fas fa-download"></i> Conference Presentation</p></a>            
-            
-          </div>
-          <div class="col">
-            <img src="assets/imgs/pcm_5.png" class="img-fluid" alt="Responsive image">
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <h1>Teachable Machine</h1>
-        <p>
-          This TensorFlow.JS-based website created for educational purposes allows non-ML users to experiment model training through their webcame.
-          Largely inspired by Google's teachable machine, it allows for a wider set of adjustables that allow to explore dataset biases and model
-          design iterations.
+        <p class="lead">
+          <a href="projects.html"><button type="button" class="btn btn-lg btn-outline-light">See Projects</button></a>
         </p>
-      </div>
+      </main>
 
-      <div class="container">
-        <h1>Radon - The Nuclear Engineering Department Chatbot</h1>
-        <p>
-          Created based on the knowledge gained on the IBM AI Specialization, this AI-powered chatbot was designd and deployed for UC Berkeley's 
-          Nuclear Engineering department. It is design to answer students most often questions.
-        </p>
-      </div>
 
-      <div class="container">
-        <h1>MIMOSAS</h1>
-        <p>
-          In collaboration with various institutions, this project provides analysis of human operations at nuclear facilities to identify
-          anomalies in normal fuel cycle operations.
-        </p>
-      </div>
 
-      <div class="container">
-        <h1>NH-RES Capstone Project</h1>
-        <p>
-          A nuclear-based renewable hybrid energy system was modeled using MATLAB simulink. 
-        </p>
-      </div>
+    </div>
+ 
 
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col">
-            <h1>Foursquare API City Comparison <a href="https://github.com/pedrojrv/foursquare_city_clustering"><i class="fab fa-github"></i></a></h1>
-            <p>Python <i class="fab fa-python"></i> &#183 Foursquare API <i class="fab fa-foursquare"></i></p>
-            <p>
-              This project was at first developed as part of the IBM Data Science Professional Certificate Capstone Project. It was further developed 
-              into a single utility function which provides an easy way for the user to compare three or more cities using KMeans clustering with 
-              data provided by Foursquare. The GitHub project repository provides several examples and tutorials on how to use this function and 
-              how it was written. In the main example, major tech hub cities including San Francisco, Chicago, and Boston are compared based on the 
-              most popular venues.
-              <a href="https://github.com/pedrojrv/foursquare_city_clustering">Learn more.</a>
-            </p>
-            <p><a href="https://github.com/pedrojrv/foursquare_city_clustering/blob/master/Final_Presentation.pdf"><i class="fas fa-download"></i> Final Presentation</p></a>            
-          </div>
-          <div class="col text-center" style="font-size: 24px;">
-            <i class="fab fa-foursquare fa-10x"></i>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <h1>Buisness Email Classifier</h1>
-        <p>
-          Based on ENRONS email, by using clustering techiques for label reduction, deep neural networs were used to create a 
-          buisness email classifier. 
-        </p>
-      </div>
-    </main>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -185,68 +81,6 @@
     <script src="assets/js/vendor/popper.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-    <script>
-        var ctx = document.getElementById("total_chart");
-        var myChart = new Chart(ctx, {
-          type: 'line',
-          data: {
-            labels: ['2020-11-23', '2020-11-24', '2020-11-25', '2020-11-26', '2020-11-27', '2020-11-28', '2020-11-29', '2020-11-30', '2020-12-01', '2020-12-02', '2020-12-03', '2020-12-04', '2020-12-05', '2020-12-06', '2020-12-07', '2020-12-08', '2020-12-09', '2020-12-10', '2020-12-11', '2020-12-12', '2020-12-13', '2020-12-14', '2020-12-15', '2020-12-16', '2020-12-17', '2020-12-18', '2020-12-19', '2020-12-20', '2020-12-21', '2020-12-22', '2020-12-23', '2020-12-24', '2020-12-25', '2020-12-26', '2020-12-27', '2020-12-28', '2020-12-29', '2020-12-30', '2020-12-31', '2021-01-01', '2021-01-02', '2021-01-03', '2021-01-04', '2021-01-05', '2021-01-06', '2021-01-07', '2021-01-08', '2021-01-09', '2021-01-10', '2021-01-11', '2021-01-12', '2021-01-13'], // INCLUDE X AXIS DATES
-            datasets: [{
-              label: "Daily Incidents", 
-              data: [306.0, 318.0, 351.0, 257.0, 411.0, 272.0, 281.0, 329.0, 357.0, 292.0, 298.0, 333.0, 332.0, 321.0, 294.0, 335.0, 342.0, 292.0, 359.0, 284.0, 236.0, 276.0, 301.0, 255.0, 310.0, 333.0, 326.0, 323.0, 301.0, 294.0, 300.0, 350.0, 258.0, 284.0, 260.0, 343.0, 317.0, 288.0, 346.0], // Total
-              lineTension: 0.1,
-              backgroundColor: 'transparent',
-              borderColor: '#007bff',
-              spanGaps:false,
-              borderWidth: 4,
-              pointBackgroundColor: '#007bff'
-            },
-            {
-            label: "Moving Average",
-            data: [328.6, 328.6, 328.6, 328.6, 328.6, 321.8, 314.4, 310.0, 330.0, 306.2, 311.4, 321.8, 322.4, 315.2, 315.6, 323.0, 324.8, 316.8, 324.4, 322.4, 302.6, 289.4, 291.2, 270.4, 275.6, 295.0, 305.0, 309.4, 318.6, 315.4, 308.8, 313.6, 300.6, 297.2, 290.4, 299.0, 292.4, 298.4, 310.8], // Average
-            lineTension: 0.1,
-            backgroundColor: 'transparent',
-            borderColor: '#38a3a5',
-            spanGaps:false,
-            borderWidth: 4,
-            pointBackgroundColor: '#ebb734'
-            },
-            {
-            label: "AI Predictions",
-            data: [340, 342, 354, 325, 343, 292, 340, 352, 365, 324, 365, 391, 359, 361, 355, 353, 369, 324, 349, 339, 333, 340, 332, 297, 341, 382, 368, 377, 352, 338, 364, 342, 244, 319, 347, 363, 332, 331, 353, 426, 349, 347, 365, 353, 327, 321, 343, 339, 365, 319, 380, 367], // AI
-            lineTension: 0.1,
-            backgroundColor: 'transparent',
-            borderColor: '#ed3e3e',
-            spanGaps:false,
-            borderWidth: 4,
-            pointBackgroundColor: '#ebb734'
-            }
-          ]
-          },
-          options: {
-            responsive: true,
-            maintainAspectRatio : true,
-            scales: {
-              yAxes: [{
-                ticks: {
-                  beginAtZero: false
-                },
-                scaleLabel: {
-                  display: true,
-                  labelString: 'Crime Rate (per day)'
-                }
-              }]
-            },
-            legend: {
-              display: true,
-              labels : {
-                  useLineStyle: true
-              }
-          }
-          }
-        });
-      </script>
-
 
   </body>
 </html>
