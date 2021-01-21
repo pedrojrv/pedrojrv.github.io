@@ -25,5 +25,10 @@ body {
 }
 
 .project_container {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.first_project_container {
   padding-bottom: 1rem;
 }
