@@ -82,20 +82,23 @@
       </div>
 
       <div class="container project_container border-bottom">
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center">
             <canvas class="my-4" id="total_chart" width="50%" height="30%"></canvas>
           </div>
           <div class="col-md-6 order-first order-md-last">
             <h1>San Francisco Crime and Incident Reporter <a href="https://pedrojrv.github.io/sfpd_incident_reporter/"><i class="fab fa-github"></i></a></h1>
             <p>
-              Python <i class="fab fa-python"></i> JavaScript <i class="fab fa-js"></i> Front-end <i class="fab fa-html5"></i> &#183 Scikit-Learn &#183 Decision Trees
+              Python <i class="fab fa-python"></i> JavaScript <i class="fab fa-js"></i> Front-end <i class="fab fa-html5"></i> &#183 Scikit-Learn
+              &#183 ML Model Training &#183 Visualization Tools &#183 ChartJS &#183 Database Querying
             </p> 
             <p>
-              First created as part of the IBM Data Science Specialization, this website was further developed to provide information on incident 
-              and crime rate in various districts of the San Francisco area. Based on Python and JavaScript, the website offers various visualizations
-              and even AI-powered crime rate predictions. It refreshes daily by querying and processing data from the official SFPD database. 
-              A broad overview of the crime rate in San Francisco and in its various districts can be seen through a dashboard of visualizations. 
+              First created as part of the <b>visualization course</b> of the IBM Data Science Specialization, this website was further developed to 
+              provide information on incident and crime rate in various districts of the San Francisco area. Based on Python and JavaScript, 
+              the website offers various graphics and even ML-powered crime rate predictions. Several models including Decision Trees, 
+              K-Nearest-Neighbors, and Support Vector Machines were trained and optimized using grid search with cross validation due to the 
+              dataset size (~12,000 datapoints). <b>The KNN model worked best with a Mean Absolute Error of approximatedly 7.6 crimes per day</b>. 
+              The webapp refreshes daily by querying and processing data from the official SFPD database.
               <a href="https://pedrojrv.github.io/sfpd_incident_reporter/">Visit the website.</a>
             </p>
           </div>
@@ -106,14 +109,17 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <h1>Radon - Chatbot (Beta) <a href="https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=us-south&integrationID=b7d23beb-103f-4790-a1f3-8b93138da918&serviceInstanceID=15c02eaf-43fa-4bcd-81d5-f6d3b54e22c6"><i class="fas fa-robot"></i></a></h1>
-            <p>IBM Cloud &#183 Watson Assistant &#183 Chatbot Design &#183 WordPress</p>
+            <p>IBM Cloud &#183 Watson Assistant &#183 Chatbot Design &#183 WordPress <i class="fab fa-wordpress"></i></p>
             <p>
               This chatbot was at first developed as part of the IBM Applied AI Professional Certificate Capstone Project. It was further developed 
               into the official chatbot for the Nuclear Engineering Department at UC Berkeley. A preliminary version of Radon (chatbot) was deployed
               in order to come up with a refined set of intents. Relevant entities were created as needed and a complex dialog flow was designed to 
               answer questions ranging from faculty and student contact information, graduate resources, course information, and diversity and inclusion
               pointers. Visit the chatbot at 
-              <a href="https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=us-south&integrationID=b7d23beb-103f-4790-a1f3-8b93138da918&serviceInstanceID=15c02eaf-43fa-4bcd-81d5-f6d3b54e22c6">nuc.berkeley.edu</a>
+              <a href="https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=us-south&integrationID=b7d23beb-103f-4790-a1f3-8b93138da918&serviceInstanceID=15c02eaf-43fa-4bcd-81d5-f6d3b54e22c6">
+                nuc.berkeley.edu.
+              </a> 
+              Ask "who is Pedro?"
               <!-- https://nuc.berkeley.edu -->
             </p>
           </div>
@@ -138,11 +144,13 @@
               for classification of multimodal data to inform nuclear security and proliferation detection scenarios. MIMOSAS provides 
               an end-to-end data processing workflow, from data ingestion and pre-processing to model training and test set classification. 
               The pipeline is specified via an input deck, making workflow customization effortless, and the framework is modular allowing 
-              for the easy addition of new learning algorithms. Learn more at 
+              for the easy addition of new learning algorithms.              
+              Learn more at 
               <a href="https://complexity.berkeley.edu/mimosas/">complexity.berkeley.edu.</a>
             </p>
             <p>
-              <a href="https://nonproliferation.github.io/mimosas/"><i class="fas fa-download"></i> Documentation</a>
+              <a href="https://nonproliferation.github.io/mimosas/"><i class="fas fa-download"></i> Documentation</a><br>
+              <a href="https://drive.google.com/file/d/1DwI5fNvOkB0YDIb52FcDXe8R8sjQhwaf/view?usp=sharing"><i class="fas fa-download"></i> Conference Paper</a>
             </p>
           </div>
         </div>
@@ -159,7 +167,7 @@
               This TensorFlow.JS-based website created for educational purposes allows non-ML users to experiment model training through their own webcam.
               Largely inspired by Google's Teachable Machine, it allows the user to not only to learn about transfer learning, but also play with more 
               model hyperparameters. Various models can be trained during the same session using several combinations of parameters and dataset sizes.
-              Performance metrics can be compared using the TF Visor menu which also allows for individual model inspection and live training visualizations.  
+              Performance metrics can be compared using the TF Visor menu which also allows for individual model inspection and live training visualizations. 
               <!-- <a href="https://pedrojrv.github.io/teachable_machine/">Visit the webapp.</a> -->
             </p>
           </div>
@@ -173,21 +181,22 @@
       <div class="container project_container  border-bottom">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <img src="assets/imgs/email.gif" class="img-fluid email" alt="Responsive image">
+            <img src="assets/imgs/email_classification.gif" class="img-fluid email" alt="Responsive image">
           </div>
           <div class="col-md-6 order-first order-md-last">
             <h1>Business Email Classifier <a href="https://github.com/pedrojrv/email_classification"><i class="fab fa-github"></i></a></h1>
+            <h6>A Proof-of-Concept e-mail Classifier for Business</h6>
             <p>Python <i class="fab fa-python"></i> &#183 NLP <i class="fas fa-language"></i> &#183 TensorFlow &#183 LSTM &#183 K-Means &#183 PCA</p>
             <p>
               This team project was developed as part of UC Berkeley's Data Mining and Analytics course. 
-              Using the ENRON Email Dataset, an LSTM Model was trained for Multi-Class Email Text Classification. 
-              Due to the computational limitations, the Google News pre-trained word embedding model was used to transform
-              the email subject's (labels). Using clustering, and dimensionality reduction techniques, a small set of discrete 
+              <b>Using the ENRON Email Dataset, an machine learning was trained for Multi-Class Email Text Classification.</b>
+              Due to computational limitations, the Google News pre-trained word embedding model was used to transform
+              the email subject's (labels). Using clustering and dimensionality reduction techniques, a small set of discrete 
               labels were created which were subsequently used to train a small LSTM TensorFlow model. The model is far from
-              perfect, but it demonstrates the core workflow when dealing with NLP challenges. 
+              perfect, but it demonstrates the core workflow when dealing with NLP challenges.
             </p>
             <p>
-              <a href="https://github.com/pedrojrv/email_classification/raw/master/Documents/Formatted_OG%20Final%20Presentation.pdf"><i class="fas fa-download"></i> Class Presentation</a>
+              <a href="https://github.com/pedrojrv/email_classification/blob/master/Documents/Formatted_OG%20Final%20Presentation.pdf"><i class="fas fa-download"></i> Class Presentation</a>
             </p>
           </div>
         </div>
@@ -197,15 +206,18 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <h1>Foursquare-based City Comparison <a href="https://github.com/pedrojrv/foursquare_city_clustering"><i class="fab fa-github"></i></a></h1>
-            <p>Python <i class="fab fa-python"></i> &#183 Foursquare API <i class="fab fa-foursquare"></i> &#183 Folium &#183 Scikit-Learn &#183 K-Clustering</p>
+            <h6>Foursquare-powered City Clustering and Recommendations</h6>
+            <p>Python <i class="fab fa-python"></i> &#183 Foursquare API <i class="fab fa-foursquare"></i> &#183 Unsupervised Learning &#183 
+              Folium <i class="fas fa-map"></i> &#183 Scikit-Learn &#183 K-means Clustering</p>
             <p>
               This project was at first developed as part of the IBM Data Science Professional Certificate Capstone Project. It was further developed 
-              into a single utility function which provides an easy way for the user to compare three or more cities using KMeans clustering with 
-              data provided by Foursquare. The GitHub project repository provides several examples and tutorials on how to use this function and 
-              how it was written. In the main example, major tech hub cities including San Francisco, Chicago, and Boston are compared based on the 
-              most popular venues.
+              into a single utility function which <b>provides an easy way for a user to compare three or more cities using KMeans clustering with 
+              data provided by Foursquare</b>. The project's GitHub repository provides several examples and tutorials. In the main example, 
+              major tech hub cities including San Francisco, Chicago, and Boston are compared based on the most popular venues. Unsupervised 
+              learning performance can be measured in multiple undirect ways but were not explored here. Grading the quality of the 
+              recommendations prospective users is an example of a common performance metrics used in these type of products. 
             </p>
-            <p><a href="https://github.com/pedrojrv/foursquare_city_clustering/blob/master/Final_Presentation.pdf"><i class="fas fa-download"></i> Final Presentation</p></a>            
+            <p><a href="https://github.com/pedrojrv/foursquare_city_clustering/blob/master/documents/Final_Presentation.pdf"><i class="fas fa-download"></i> Final Presentation</p></a>            
           </div>
           <div class="col-md-6 text-center" style="font-size: 24px;">
             <i class="fab fa-foursquare fa-10x"></i>
@@ -222,12 +234,13 @@
           </div>
           <div class="col-md-6 order-first order-md-last">
             <h1>SCALE PyTools <a href="https://github.com/pedrojrv/SCALE_PyTools"><i class="fab fa-github"></i></a></h1>
-            <p>Python <i class="fab fa-python"></i> &#183 MATLAB &#183 SCALE &#183 Serpent2</p>
+            <h6>A Python Pipeline for Accelerated MSR Experimentation</h6>
+            <p>Python <i class="fab fa-python"></i> &#183 MATLAB &#183 SCALE &#183 Serpent2 &#183 Monte-Carlo</p>
             <p>
-              Aimed at tackling tedious data extraction processes, SCALE PyTools is a python-based project designed to allow for faster experimental
-              iterations of reactivity and fission product removal simulations of advance nuclear reactor using SCALE, a comprehensive modeling and 
+              Aimed at tackling tedious data extraction processes, SCALE PyTools is a python-based project designed to <b>allow for faster experimental
+              iterations of reactivity and fission product removal simulations of advance nuclear reactor using SCALE</b>, a comprehensive modeling and 
               simulation suite for nuclear safety analysis. More specifically, the utilities were designed to generate and run fission product removal
-              simulations of the off-gas system in molten salt reactors. This utility toolbox was used to study the SCALE's new TRITON module.
+              simulations of the off-gas system in molten salt reactors. This utility toolbox was used to study SCALE's new TRITON module.
             </p>
             <p><a href="https://info.ornl.gov/sites/publications/Files/Pub135162.pdf"><i class="fas fa-download"></i> Published Technical Report</p></a>
             <p><a href="https://drive.google.com/file/d/1alniDp8h4_7ej0qH7MWP0n5IaL_9p-rD/view?usp=sharing"><i class="fas fa-download"></i> Conference Presentation</p></a>            
@@ -240,22 +253,26 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <h1>NH-RES Capstone Project <a href="https://github.com/pedrojrv/nrhes"><i class="fab fa-github"></i></a></h1>
+            <h6>A Low-cost High-profit Hybrid Energy System  </h6>
             <p>MATLAB</p>
             <p>
               In order to address the decrease in grid stability brought on by the increasing penetration of
               renewable technologies, the ability to “load follow”, to match the energy output to the demand,
-              is pivotal as it helps prevent oversupplying electricity beyond the demand. The proposed
-              design is a Nuclear-Renewable Hybrid Energy System (NR-HES). This system is comprised of a
-              ThorCon operated molten salt reactor, renewable energy sources, and a 4-step CuCl Hydrogen
-              Production Plant. The big economic savings of the nuclear-hydrogen facility allows 
-              environmental goals to be achievable via the production of a secondary product.
+              is pivotal to help prevent overgeneration and oversupplying of electricity. To tackle this,
+              a Nuclear-Renewable Hybrid Energy System (NR-HES) was suggested. The proposed system is comprised of 
+              a 1 GWe molten salt reactor, renewable energy sources, and a 34 ton/day 4-step CuCl Hydrogen
+              Production Plant. By optimizing the operation between the NR-HES components, <b>hydrogen production costs were 
+              brought down to $1.66/kg, 32% below the Department of Energy target for 2020 of $2.30/kg.</b> The low
+              production costs coupled with potential profits resulted in a <b>40% reduction in the nuclear power
+              plant's levelized cost of electricity ($0.0199/kWh)</b>.
             </p>
+            <p><a href="https://drive.google.com/file/d/1UdaakCT740XrFS8r3I9eosw6V6j81BnV/view?usp=sharing"><i class="fas fa-download"></i>  NR-HES Final Report</p></a>
           </div>
           <div class="col-md-6 text-center">
-            <i class="fas fa-solar-panel fa-7x"></i>
-            <i class="fas fa-wind fa-7x"></i><br>
-            <i class="fas fa-water fa-7x"></i>
-            <i class="fas fa-radiation fa-7x"></i>
+            <i class="fas fa-solar-panel fa-8x"></i>
+            <i class="fas fa-wind fa-8x"></i><br>
+            <i class="fas fa-water fa-8x"></i>
+            <i class="fas fa-radiation fa-8x"></i>
           </div>
         </div>
       </div>
