@@ -9,6 +9,7 @@
 
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="icon" href="assets/imgs/favicon.ico">
 
     <script src="https://kit.fontawesome.com/ca80335392.js" crossorigin="anonymous"></script>
 
@@ -64,15 +65,19 @@
           <div class="col-md-6">
 
             <h1>NucML (Coming soon)<a href="https://github.com/pedrojrv/nucml"><i class="fab fa-github"></i></a></h1>
+            <h6>Python Pipeline for ML-based Nuclear Data Solutions</h6>
             <p>Python <i class="fab fa-python"></i> &#183 TensorFlow &#183 XGBoost &#183 Scikit-Learn &#183 PyDoc</p>
             <p>
-              NucML is a python toolbox for accelerated ML-based nuclear data evaluations. It offers capabilities 
-              that allow the user to navigate through each step of the ML-based nuclear data cross section evaluation pipeline. 
-              These steps include dataset parsing and compilation, exploratory data analysis, data manipulation
-              and feature engineering, model training and evaluation, and validation via criticality benchmarks. 
-              In addition, it includes tools that allow direct comparison with traditional solutions. As a result of 
-              my doctorate research, several ready-to-use ML-datasets and pre-trained models are also included. A sister
-              repository contains tutorials in the form of jupyter notebooks showcasing all capabilities of NucML.
+              NucML is the first and only end-to-end python-based supervised machine learning pipeline for enhanced 
+              bias-free nuclear data generation and evaluation to support the advancement of next-generation nuclear systems. 
+              It offers capabilities that allow the user to navigate through each step of the ML-based nuclear data 
+              cross section evaluation pipeline. These steps include dataset parsing and compilation of reaction data, 
+              exploratory data analysis, data manipulation and feature engineering, model training and evaluation, and 
+              validation via criticality benchmarks. Current research suggests <b>data analysis, evaluation, and benchmarking 
+              iteration rates are 2x-20x faster than traditional theoretical methods</b> using NucML’s workflow pipeline.
+              As a result of my doctorate research, several ready-to-use ML-datasets and pre-trained models are also included.
+              These models have <b>outperformed established methods by up to 170% in the U-233 Jezebel benchmark and by 140%
+              in the prediction of newly measured Cl-35 datapoints.</b>
             </p>
           </div>
           <div class="col-md-6 text-center" style="font-size: 24px;">
@@ -88,6 +93,7 @@
           </div>
           <div class="col-md-6 order-first order-md-last">
             <h1>San Francisco Crime and Incident Reporter <a href="https://pedrojrv.github.io/sfpd_incident_reporter/"><i class="fab fa-github"></i></a></h1>
+            <h6>A Small ML-powered SFPD Crime Rate Visualization Website</h6>
             <p>
               Python <i class="fab fa-python"></i> JavaScript <i class="fab fa-js"></i> Front-end <i class="fab fa-html5"></i> &#183 Scikit-Learn
               &#183 ML Model Training &#183 Visualization Tools &#183 ChartJS &#183 Database Querying
@@ -96,9 +102,9 @@
               First created as part of the <b>visualization course</b> of the IBM Data Science Specialization, this website was further developed to 
               provide information on incident and crime rate in various districts of the San Francisco area. Based on Python and JavaScript, 
               the website offers various graphics and even ML-powered crime rate predictions. Several models including Decision Trees, 
-              K-Nearest-Neighbors, and Support Vector Machines were trained and optimized using grid search with cross validation due to the 
-              dataset size (~12,000 datapoints). <b>The KNN model worked best with a Mean Absolute Error of approximatedly 7.6 crimes per day</b>. 
-              The webapp refreshes daily by querying and processing data from the official SFPD database.
+              K-Nearest-Neighbors, and Support Vector Machines were trained and optimized using grid search with cross validation. 
+              <b>The KNN model worked best with a Mean Absolute Error of approximatedly 7.6 crimes per day</b>. 
+              The webapp refreshes daily by querying and processing the latest data from the official SFPD database.
               <a href="https://pedrojrv.github.io/sfpd_incident_reporter/">Visit the website.</a>
             </p>
           </div>
@@ -109,13 +115,14 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <h1>Radon - Chatbot (Beta) <a href="https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=us-south&integrationID=b7d23beb-103f-4790-a1f3-8b93138da918&serviceInstanceID=15c02eaf-43fa-4bcd-81d5-f6d3b54e22c6"><i class="fas fa-robot"></i></a></h1>
+            <h6>The Nuclear Engineering Department at UC Berkeley Chatbot </h6>
             <p>IBM Cloud &#183 Watson Assistant &#183 Chatbot Design &#183 WordPress <i class="fab fa-wordpress"></i></p>
             <p>
               This chatbot was at first developed as part of the IBM Applied AI Professional Certificate Capstone Project. It was further developed 
-              into the official chatbot for the Nuclear Engineering Department at UC Berkeley. A preliminary version of Radon (chatbot) was deployed
+              into the <b>official chatbot for the Nuclear Engineering Department at UC Berkeley</b>. A preliminary version of Radon was deployed
               in order to come up with a refined set of intents. Relevant entities were created as needed and a complex dialog flow was designed to 
-              answer questions ranging from faculty and student contact information, graduate resources, course information, and diversity and inclusion
-              pointers. Visit the chatbot at 
+              <b>answer questions ranging from faculty and student contact information, graduate resources, course information, and diversity and inclusion
+              pointers</b>. Visit the chatbot at 
               <a href="https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=us-south&integrationID=b7d23beb-103f-4790-a1f3-8b93138da918&serviceInstanceID=15c02eaf-43fa-4bcd-81d5-f6d3b54e22c6">
                 nuc.berkeley.edu.
               </a> 
@@ -138,10 +145,11 @@
           </div>
           <div class="col-md-6 order-first order-md-last">
             <h1>MIMOSAS <a href="https://github.com/nonproliferation/mimosas"><i class="fab fa-github"></i></a></h1>
+            <h6>ML Supervised Pipeline for Nuclear Security</h6>
             <p>Python <i class="fab fa-python"></i> &#183 TensorFlow &#183 Scikit-Learn &#183 DNN &#183 Random Forest</p>
             <p>
               MIMOSAS (Multimodal Input Model Output Security Analysis Suite) is a supervised machine learning pipeline developed 
-              for classification of multimodal data to inform nuclear security and proliferation detection scenarios. MIMOSAS provides 
+              for <b>classification of multimodal data to inform nuclear security and proliferation detection scenarios</b>. MIMOSAS provides 
               an end-to-end data processing workflow, from data ingestion and pre-processing to model training and test set classification. 
               The pipeline is specified via an input deck, making workflow customization effortless, and the framework is modular allowing 
               for the easy addition of new learning algorithms.              
@@ -151,52 +159,6 @@
             <p>
               <a href="https://nonproliferation.github.io/mimosas/"><i class="fas fa-download"></i> Documentation</a><br>
               <a href="https://drive.google.com/file/d/1DwI5fNvOkB0YDIb52FcDXe8R8sjQhwaf/view?usp=sharing"><i class="fas fa-download"></i> Conference Paper</a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container project_container border-bottom">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <!-- <h1>Teachable Machine <a href="https://github.com/pedrojrv/teachable_machine"><i class="fab fa-github"></i></a></h1> -->
-            <h1>Teachable Machine</h1>
-
-            <p>JavaScript <i class="fab fa-js"></i> Front-end <i class="fab fa-html5"></i>&#183 TensorFlow.JS</p> 
-            <p>
-              This TensorFlow.JS-based website created for educational purposes allows non-ML users to experiment model training through their own webcam.
-              Largely inspired by Google's Teachable Machine, it allows the user to not only to learn about transfer learning, but also play with more 
-              model hyperparameters. Various models can be trained during the same session using several combinations of parameters and dataset sizes.
-              Performance metrics can be compared using the TF Visor menu which also allows for individual model inspection and live training visualizations. 
-              <!-- <a href="https://pedrojrv.github.io/teachable_machine/">Visit the webapp.</a> -->
-            </p>
-          </div>
-          <div class="col-md-6 text-center" style="font-size: 24px;">
-            <i class="fas fa-robot fa-8x"></i>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="container project_container  border-bottom">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <img src="assets/imgs/email_classification.gif" class="img-fluid email" alt="Responsive image">
-          </div>
-          <div class="col-md-6 order-first order-md-last">
-            <h1>Business Email Classifier <a href="https://github.com/pedrojrv/email_classification"><i class="fab fa-github"></i></a></h1>
-            <h6>A Proof-of-Concept e-mail Classifier for Business</h6>
-            <p>Python <i class="fab fa-python"></i> &#183 NLP <i class="fas fa-language"></i> &#183 TensorFlow &#183 LSTM &#183 K-Means &#183 PCA</p>
-            <p>
-              This team project was developed as part of UC Berkeley's Data Mining and Analytics course. 
-              <b>Using the ENRON Email Dataset, an machine learning was trained for Multi-Class Email Text Classification.</b>
-              Due to computational limitations, the Google News pre-trained word embedding model was used to transform
-              the email subject's (labels). Using clustering and dimensionality reduction techniques, a small set of discrete 
-              labels were created which were subsequently used to train a small LSTM TensorFlow model. The model is far from
-              perfect, but it demonstrates the core workflow when dealing with NLP challenges.
-            </p>
-            <p>
-              <a href="https://github.com/pedrojrv/email_classification/blob/master/Documents/Formatted_OG%20Final%20Presentation.pdf"><i class="fas fa-download"></i> Class Presentation</a>
             </p>
           </div>
         </div>
@@ -225,6 +187,53 @@
         </div>
       </div>
 
+
+      <div class="container project_container  border-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="assets/imgs/email_classification.gif" class="img-fluid email" alt="Responsive image">
+          </div>
+          <div class="col-md-6 order-first order-md-last">
+            <h1>Business Email Classifier <a href="https://github.com/pedrojrv/email_classification"><i class="fab fa-github"></i></a></h1>
+            <h6>A Proof-of-Concept Business-oriented e-mail Classifier</h6>
+            <p>Python <i class="fab fa-python"></i> &#183 NLP <i class="fas fa-language"></i> &#183 TensorFlow &#183 LSTM &#183 K-Means &#183 PCA</p>
+            <p>
+              This team project was developed as part of UC Berkeley's Data Mining and Analytics course. 
+              <b>Using the ENRON Email Dataset, an machine learning was trained for Multi-Class Email Text Classification.</b>
+              Due to computational limitations, the Google News pre-trained word embedding model was used to transform
+              the email subject's (labels). Using clustering and dimensionality reduction techniques, a small set of discrete 
+              labels were created which were subsequently used to train a small LSTM TensorFlow model. The model is far from
+              perfect, but it demonstrates the core 
+              workflow when dealing with NLP challenges.
+            </p>
+            <p>
+              <a href="https://github.com/pedrojrv/email_classification/blob/master/Documents/Formatted_OG%20Final%20Presentation.pdf"><i class="fas fa-download"></i> Class Presentation</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container project_container border-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <!-- <h1>Teachable Machine <a href="https://github.com/pedrojrv/teachable_machine"><i class="fab fa-github"></i></a></h1> -->
+            <h1>Teachable Machine</h1>
+            <h6>User Friendly Transfer Learning for Non-ML Learners</h6>
+            <p>JavaScript <i class="fab fa-js"></i> Front-end <i class="fab fa-html5"></i>&#183 TensorFlow.JS</p> 
+            <p>
+              This TensorFlow.JS-based website created for educational purposes allows non-ML users to experiment model training through their own webcam.
+              Largely inspired by Google's Teachable Machine, it <b>allows the user to not only to learn about transfer learning, but also play with more 
+              model hyperparameters</b>. Various models can be trained during the same session using several combinations of parameters and dataset sizes.
+              Performance metrics can be compared using the TF Visor menu which also allows for individual model inspection and live training visualizations. 
+              <!-- <a href="https://pedrojrv.github.io/teachable_machine/">Visit the webapp.</a> -->
+            </p>
+          </div>
+          <div class="col-md-6 text-center" style="font-size: 24px;">
+            <i class="fas fa-robot fa-8x"></i>
+          </div>
+        </div>
+      </div>
 
 
       <div class="container project_container  border-bottom">
