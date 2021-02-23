@@ -111,17 +111,17 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#modeling-data">Modeling Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#processing-data-for-monte-carlo">Processing Data for Monte Carlo</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="processing-datasets.html">Processing Datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/0_Generating_MLXS_Benchmark.html">Generating ML XS, ACE Files, Benchmark Inputs and Serpent Scripts</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#validating-using-benchmarks">Validating using Benchmarks</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="validating-ml-models.html">Validating ML Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/1_Gathering_Benchmark_Results_B0.html">Analyzing Benchmark Results for Validation</a></li>
 </ul>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">DOCUMENTATION</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="nucml.html">nucml package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">nucml</a></li>
 </ul>
 <p class="caption"><span class="caption-text">FAQ AND CONTACT</span></p>
 <ul>
@@ -218,12 +218,8 @@
     text-align: unset;
 }
 </style>
-<div class="admonition note" id="navigating-the-nde-label">
-<p class="admonition-title">Note</p>
-<p>Documentation in progress.</p>
-</div>
 <div class="section" id="loading-data">
-<h1>Loading Data<a class="headerlink" href="#loading-data" title="Permalink to this headline">¶</a></h1>
+<span id="navigating-the-nde-label"></span><h1>Loading Data<a class="headerlink" href="#loading-data" title="Permalink to this headline">¶</a></h1>
 <p>Identifying, parsing, and formatting all nuclear data sources can be a tedious time-consuming job. NucML contains a variety of utilities
 that make it easy to download and load the latest versions of the EXFOR, RIPL, ENDF, and AME libraries easily. To convert these into ML-friendly datasets,
 parsing utilities are available to read library-native formats, restructure the information, and store the resulting data structure into single
@@ -282,6 +278,10 @@ hyperparameters and resulting performance metrics for the supported models. Othe
 configured and used using user-provided credentials. It is the goal of NucML to first and foremost provide researchers the framework and tools to create,
 train, and analyze their models rather than providing a set of optimized algorithms.</p>
 <p>Please refer to the following links for example python scripts for different models.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Links will not work as scripts are not yet public.</p>
+</div>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/pedrojrv/ML_Nuclear_Data/blob/master/ML_EXFOR_neutrons/2_DT/dt.py">Decision-Trees (DT)</a></p></li>
 <li><p><a class="reference external" href="https://github.com/pedrojrv/ML_Nuclear_Data/blob/master/ML_EXFOR_neutrons/1_KNN/knn.py">K-Nearest-Neighbor (KNN)</a></p></li>
@@ -291,21 +291,48 @@ train, and analyze their models rather than providing a set of optimized algorit
 </div>
 <div class="section" id="processing-data-for-monte-carlo">
 <h1>Processing Data for Monte Carlo<a class="headerlink" href="#processing-data-for-monte-carlo" title="Permalink to this headline">¶</a></h1>
-<p>This section explains the philosophy behind the processing utilities and provides tutorial notebooks on how to use them. While it is possible to use
-raw predictions in benchmark calculations we have found that a hybrid aproach usually outperforms both pure ENDF- or ML-based solutions.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Documentation section in progress.</p>
+</div>
+<p>In the processing stage, evaluated data is transformed into formats (i.e. ACE files) readable by user codes like SERPENT and MCNP. Having a great model
+is only half the process. Tools are needed to efficiently create entire evaluated libraries consisting of cross-sections for all needed isotopes and
+reaction channels. Currently, NucML offers the capabilities to create isotopic .ace files by simply supplying a user-trained model. The python package
+will take care of querying the model for predictions using the same energy grid as the original .ACE files for compatibility. Additionally, some stability
+options are included. Since these algorithms are not expected to be perfect, NucML Ace is built under the assumption that the best solution is a
+hybrid solution. In other words, traditional tools must work together with ML models to create a good evaluation. By default, NucML Ace will
+stabilize the 1/v region using evaluated library values.</p>
+<img alt="NucML Submodules" src="_images/nucml_benchmark.png" />
+<p>The benchmarking utilities provided are built on top of this methodology. Once a series of models are trained there are various steps needed to set up the validation
+phase. These include (1) querying the model for relevant cross-section data for a given benchmark, (2) processing the results and converting them into appropriate
+user-code formats, (3) building metadata files used by the same codes, (4) modify the benchmark inputs accordingly, (5) run the calculation, and (6) analyze the output.
+This process has to be performed for each trained model and for each benchmark. By making use of a benchmark template repository, NucML can seamlessly run all steps
+of the validation phase for all trained models and all available benchmarks. Once all necessary files are created, a single
+bash script is provided containing all necessary instructions to run all benchmark cases for all models. The results can be collected quickly from the output of all
+calculations using built-in functionalities. Currently, only SERPENT2 is supported. Additional capabilities include a fast and easy comparison between ML- and
+ENDF-based benchmark calculations for fast reporting. Check the following example on how to generate ML cross sections, benchmark inputs, and
+bash shell scripts to aumate your model evaluations.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="processing-datasets.html">Processing Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/0_Generating_MLXS_Benchmark.html">Generating ML XS, ACE Files, Benchmark Inputs and Serpent Scripts</a></li>
 </ul>
 </div>
 </div>
 <div class="section" id="validating-using-benchmarks">
 <h1>Validating using Benchmarks<a class="headerlink" href="#validating-using-benchmarks" title="Permalink to this headline">¶</a></h1>
-<p>After processing your data, the final step is to validate the models using benchmark calculations. It is recommended that a model is
-tested using not one but multiple benchmarks.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Documentation section in progress.</p>
+</div>
+<p>Validation is perhaps the most important step in the entire pipeline. The evaluated data must perform at least better in applicable benchmarks than the previously
+released version of the library. In ML solutions, generalization is the end-goal. Algorithms usually optimize and try to minimize a loss function but EXFOR is far
+from perfect. A model that generalizes well to other EXFOR datapoints is not necessarily the best model. Therefore, we cannot rely on performance metrics derived
+from EXFOR data (even if splitted or cross-validated) to select the best performing model. Instead, a series of trained models need to be tested and validated
+using all available benchmarks. The model with the best average performance can be regarded as the best model. This is quite different from both established NDE
+and traditional ML but so is the nature of the challenge. Check the following example on how to collect the data generated by the benchmark calculations.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="validating-ml-models.html">Validating ML Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/1_Gathering_Benchmark_Results_B0.html">Analyzing Benchmark Results for Validation</a></li>
 </ul>
 </div>
 </div>
