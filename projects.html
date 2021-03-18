@@ -19,7 +19,7 @@
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Pedro Jr. Vicente-Valdez</a>
+      <a class="navbar-brand" href="index.html">Pedro Jr. Vicente-Valdez</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -60,7 +60,7 @@
         <h1 class="display-3">Projects</h1>
       </div>
 
-      <div class="container first_project_container border-bottom">
+      <!-- <div class="container first_project_container border-bottom">
         <div class="row align-items-center">
           <div class="col-md-6 text-center">
             <img src="assets/imgs/bigquery.png">
@@ -78,10 +78,33 @@
             </p>
           </div>
         </div>
+      </div>-->
+      <div class="container first_project_container border-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1>EXFOR SQL (Beta Release) </h1>
+            <h6>Modernizing the EXFOR Database using Google BigQuery</h6>
+            <p>
+              SQL <i class="fas fa-database"></i></i> &#183 Google Cloud Platform <i class="fab fa-google"></i>
+            </p> 
+            <p>
+              As part of the ongoing nuclear data modernization effort I am happy to release EXFOR SQL, a modernized SQL version of the 
+              EXFOR database hosted on Google BigQuery for easy data analysis and extraction. This database will be shared publicly soon
+              but feel free to contact me for early access.
+            </p>
+          </div>
+          <div class="col-md-6 order-first order-md-last">
+            <img src="assets/imgs/bigquery.png">
+          </div>
+        </div>
       </div>
+
 
       <div class="container project_container border-bottom">
         <div class="row align-items-center">
+          <div class="col-md-6 text-center" style="font-size: 24px;">
+            <i class="fas fa-atom fa-10x"></i>
+          </div>
           <div class="col-md-6">
 
             <h1>NucML (Pre-release) <a href="https://github.com/pedrojrv/nucml"><i class="fab fa-github"></i></a></h1>
@@ -103,8 +126,31 @@
               <a href="nucml/index.html"><i class="fas fa-download"></i> Documentation</a><br>
             </p>
           </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="container project_container border-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+
+            <h1>Milvus Utilities <a href="https://github.com/pedrojrv/milvus_image_retrieval"><i class="fab fa-github"></i></a></h1>
+            <h6>Python Utilities for Image Retrieval with Milvus</h6>
+            <p>Python <i class="fab fa-python"></i> &#183 Docker <i class="fab fa-docker"></i> &#183 TensorFlow &#183 Milvus &#183 PyDoc &#183 MySQL <i class="fas fa-database"></i></p>
+            <p>
+              The repository shows an example of how to integrate a TensorFlow model for embedding generation and storing with Milvus, 
+              an open-source vector similarity search engine. It also contains a set of python-based utility functions created to 
+              more easily keep track of processed images, extract and render nearest neighbor files locally, and download them locally 
+              if needed.  
+            </p>
+            <p>
+              <a href="https://pedrojrv.github.io/milvus_image_retrieval/"><i class="fas fa-download"></i> Documentation</a><br>
+            </p>
+          </div>
           <div class="col-md-6 text-center" style="font-size: 24px;">
-            <i class="fas fa-atom fa-10x"></i>
+            <img src="assets/imgs/milvus_logo.png" class="img-fluid" alt="Responsive image">
           </div>
         </div>
       </div>
