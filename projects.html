@@ -37,6 +37,9 @@
           <li class="nav-item">
             <a class="nav-link" href="https://www.linkedin.com/in/pedrojrvv/">LinkedIn <i class="fab fa-linkedin"></i></a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="datasets.html">Datasets <i class="fas fa-database"></i></i></a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               NucML
@@ -44,7 +47,6 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="https://github.com/pedrojrv/nucml">GitHub</a>
               <a class="dropdown-item" href="https://pedrojrv.github.io/nucml/">Documentation</a>
-              <a class="dropdown-item" href="eda.html">EDA EXFOR</a>
             </div>
           </li>
           <li class="nav-item">
@@ -82,15 +84,19 @@
       <div class="container first_project_container border-bottom">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <h1>EXFOR SQL (Beta Release) </h1>
+            <h1>EXFOR SQL </h1>
             <h6>Modernizing the EXFOR Database using Google BigQuery</h6>
             <p>
               SQL <i class="fas fa-database"></i></i> &#183 Google Cloud Platform <i class="fab fa-google"></i>
             </p> 
             <p>
-              As part of the ongoing nuclear data modernization effort I am happy to release EXFOR SQL, a modernized SQL version of the 
-              EXFOR database hosted on Google BigQuery for easy data analysis and extraction. This database will be shared publicly soon
-              but feel free to contact me for early access.
+              As part of the ongoing nuclear data modernization effort, I am happy to release EXFOR SQL, a modernized SQL version of the 
+              EXFOR database hosted on Google BigQuery for easy data analysis and extraction. In addition to EXFOR, data from the 
+              Atomic Mass Evaluation, and the Evaluated Nuclear Structure Data File is also included.<br><br>
+
+              It is a public dataset meaning you can access it using the table id: <br>
+              
+              <b>ml-nuclear-data:nuclear_data.exfor</b>
             </p>
           </div>
           <div class="col-md-6 order-first order-md-last">
@@ -107,7 +113,7 @@
           </div>
           <div class="col-md-6">
 
-            <h1>NucML (Pre-release) <a href="https://github.com/pedrojrv/nucml"><i class="fab fa-github"></i></a></h1>
+            <h1>NucML <a href="https://github.com/pedrojrv/nucml"><i class="fab fa-github"></i></a></h1>
             <h6>Python Pipeline for ML-based Nuclear Data Solutions</h6>
             <p>Python <i class="fab fa-python"></i> &#183 TensorFlow &#183 XGBoost &#183 Scikit-Learn &#183 PyDoc</p>
             <p>
@@ -116,14 +122,14 @@
               It offers capabilities that allow the user to navigate through each step of the ML-based nuclear data 
               cross section evaluation pipeline. These steps include dataset parsing and compilation of reaction data, 
               exploratory data analysis, data manipulation and feature engineering, model training and evaluation, and 
-              validation via criticality benchmarks. Current research suggests <b>data analysis, evaluation, and benchmarking 
+              validation via criticality benchmarks. Current research revealed <b>data analysis, evaluation, and benchmarking 
               iteration rates are 2x-20x faster than traditional theoretical methods</b> using NucML’s workflow pipeline.
-              As a result of my doctorate research, several ready-to-use ML-datasets and pre-trained models are also included.
+              As a result of my doctorate research, several ready-to-use ML datasets and pre-trained models are also included.
               These models have <b>outperformed established methods by up to 170% in the U-233 Jezebel benchmark and by 140%
               in the prediction of newly measured Cl-35 datapoints.</b>
             </p>
             <p>
-              <a href="nucml/index.html"><i class="fas fa-download"></i> Documentation</a><br>
+              <a href="https://pedrojrv.github.io/nucml/index.html"><i class="fas fa-download"></i> Documentation</a><br>
             </p>
           </div>
         </div>
@@ -170,11 +176,11 @@
             </p> 
             <p>
               First created as part of the <b>visualization course</b> of the IBM Data Science Specialization, this website was further developed to 
-              provide information on incident and crime rate in various districts of the San Francisco area. Based on Python and JavaScript, 
+              provide information on incidents and crime rates in various districts of the San Francisco area. Based on Python and JavaScript, 
               the website offers various graphics and even ML-powered crime rate predictions. Several models including Decision Trees, 
-              K-Nearest-Neighbors, and Support Vector Machines were trained and optimized using grid search with cross validation. 
-              <b>The KNN model worked best with a Mean Absolute Error of approximatedly 7.6 crimes per day</b>. 
-              The webapp refreshes daily by querying and processing the latest data from the official SFPD database.
+              K-Nearest-Neighbors, and Support Vector Machines were trained and optimized using grid search with cross-validation. 
+              <b>The KNN model worked best with a Mean Absolute Error of approximately 7.6 crimes per day</b>. 
+              The web app refreshes daily by querying and processing the latest data from the official SFPD database.
               <a href="https://pedrojrv.github.io/sfpd_incident_reporter/">Visit the website.</a>
             </p>
           </div>
@@ -190,7 +196,7 @@
             <p>
               This chatbot was at first developed as part of the IBM Applied AI Professional Certificate Capstone Project. It was further developed 
               into the <b>official chatbot for the Nuclear Engineering Department at UC Berkeley</b>. A preliminary version of Radon was deployed
-              in order to come up with a refined set of intents. Relevant entities were created as needed and a complex dialog flow was designed to 
+              to come up with a refined set of intents. Relevant entities were created as needed and a complex dialog flow was designed to 
               <b>answer questions ranging from faculty and student contact information, graduate resources, course information, and diversity and inclusion
               pointers</b>. Visit the chatbot at 
               <a href="https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=us-south&integrationID=b7d23beb-103f-4790-a1f3-8b93138da918&serviceInstanceID=15c02eaf-43fa-4bcd-81d5-f6d3b54e22c6">
@@ -219,7 +225,7 @@
             <p>Python <i class="fab fa-python"></i> &#183 TensorFlow &#183 Scikit-Learn &#183 DNN &#183 Random Forest</p>
             <p>
               MIMOSAS (Multimodal Input Model Output Security Analysis Suite) is a supervised machine learning pipeline developed 
-              for <b>classification of multimodal data to inform nuclear security and proliferation detection scenarios</b>. MIMOSAS provides 
+              for the <b>classification of multimodal data to inform nuclear security and proliferation detection scenarios</b>. MIMOSAS provides 
               an end-to-end data processing workflow, from data ingestion and pre-processing to model training and test set classification. 
               The pipeline is specified via an input deck, making workflow customization effortless, and the framework is modular allowing 
               for the easy addition of new learning algorithms.              
@@ -245,9 +251,7 @@
               This project was at first developed as part of the IBM Data Science Professional Certificate Capstone Project. It was further developed 
               into a single utility function which <b>provides an easy way for a user to compare three or more cities using KMeans clustering with 
               data provided by Foursquare</b>. The project's GitHub repository provides several examples and tutorials. In the main example, 
-              major tech hub cities including San Francisco, Chicago, and Boston are compared based on the most popular venues. Unsupervised 
-              learning performance can be measured in multiple undirect ways but were not explored here. Grading the quality of the 
-              recommendations prospective users is an example of a common performance metrics used in these type of products. 
+              major tech hub cities including San Francisco, Chicago, and Boston are compared based on the most popular venues. 
             </p>
             <p><a href="https://github.com/pedrojrv/foursquare_city_clustering/blob/master/documents/Final_Presentation.pdf"><i class="fas fa-download"></i> Final Presentation</p></a>            
           </div>
@@ -269,9 +273,9 @@
             <p>Python <i class="fab fa-python"></i> &#183 NLP <i class="fas fa-language"></i> &#183 TensorFlow &#183 LSTM &#183 K-Means &#183 PCA</p>
             <p>
               This team project was developed as part of UC Berkeley's Data Mining and Analytics course. 
-              <b>Using the ENRON Email Dataset, an machine learning was trained for Multi-Class Email Text Classification.</b>
+              <b>Using the ENRON Email Dataset, a machine learning model was trained for Multi-Class Email Text Classification.</b>
               Due to computational limitations, the Google News pre-trained word embedding model was used to transform
-              the email subject's (labels). Using clustering and dimensionality reduction techniques, a small set of discrete 
+              the email subjects (labels). Using clustering and dimensionality reduction techniques, a small set of discrete 
               labels were created which were subsequently used to train a small LSTM TensorFlow model. The model is far from
               perfect, but it demonstrates the core 
               workflow when dealing with NLP challenges.
@@ -289,11 +293,11 @@
           <div class="col-md-6">
             <!-- <h1>Teachable Machine <a href="https://github.com/pedrojrv/teachable_machine"><i class="fab fa-github"></i></a></h1> -->
             <h1>Teachable Machine</h1>
-            <h6>User Friendly Transfer Learning for Non-ML Learners</h6>
+            <h6>User-Friendly Transfer Learning for Non-ML Learners</h6>
             <p>JavaScript <i class="fab fa-js"></i> Front-end <i class="fab fa-html5"></i>&#183 TensorFlow.JS</p> 
             <p>
-              This TensorFlow.JS-based website created for educational purposes allows non-ML users to experiment model training through their own webcam.
-              Largely inspired by Google's Teachable Machine, it <b>allows the user to not only to learn about transfer learning, but also play with more 
+              This TensorFlow.JS-based website created for educational purposes allows non-ML users to experiment with model training through their webcam.
+              Largely inspired by Google's Teachable Machine, it <b>allows the user to not only learn about transfer learning but also play with more 
               model hyperparameters</b>. Various models can be trained during the same session using several combinations of parameters and dataset sizes.
               Performance metrics can be compared using the TF Visor menu which also allows for individual model inspection and live training visualizations. 
               <!-- <a href="https://pedrojrv.github.io/teachable_machine/">Visit the webapp.</a> -->
@@ -335,7 +339,7 @@
             <h6>A Low-cost High-profit Hybrid Energy System  </h6>
             <p>MATLAB</p>
             <p>
-              In order to address the decrease in grid stability brought on by the increasing penetration of
+              To address the decrease in grid stability brought on by the increasing penetration of
               renewable technologies, the ability to “load follow”, to match the energy output to the demand,
               is pivotal to help prevent overgeneration and oversupplying of electricity. To tackle this,
               a Nuclear-Renewable Hybrid Energy System (NR-HES) was suggested. The proposed system is comprised of 
